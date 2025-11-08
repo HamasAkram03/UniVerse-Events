@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniVerse Events - Student Event Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">UniVerse Events</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="guest-only">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="guest-only">
+                        <a href="register.html">Register</a>
+                    </li>
+                    <li class="auth-only" style="display: none;">
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%); color: white; padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Welcome to UniVerse Events</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Discover and manage university events in one place</p>
+            <a href="events.html" class="btn btn-primary">Browse Events</a>
+            <a href="register.html" class="btn" style="background: white; color: var(--primary-color); margin-left: 1rem;">Join Now</a>
+        </div>
+    </section>
+
+    <section style="padding: 4rem 0; background: white;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Featured Events</h2>
+            <div id="eventsContainer" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Events will load here -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
